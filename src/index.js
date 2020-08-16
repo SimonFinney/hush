@@ -3,6 +3,7 @@
  * @copyright Simon Finney 2020
  */
 
+import NoSleep from "nosleep.js";
 import React, { StrictMode, useEffect, useState } from "react";
 import { render } from "react-dom";
 import Helmet from "react-helmet";
@@ -12,9 +13,23 @@ import { description as title } from "../package.json";
 import audio from "./audio.mp3";
 import "./index.scss";
 
-const App = () => {
+const noSleep = new NoSleep();
+
+function wake() {
+  document.removeEventListener("click", wake);
+  noSleep.enable();
+}
+
+function App() {
   const [isLoaded, setIsLoaded] = useState();
-  useEffect(() => setIsLoaded(true), []);
+
+  useEffect(() => {
+    setIsLoaded(true);
+
+    document.addEventListener("click", wake);
+
+    return () => noSleep.disable();
+  }, []);
 
   return (
     <StrictMode>
@@ -32,6 +47,6 @@ const App = () => {
       </main>
     </StrictMode>
   );
-};
+}
 
 render(<App />, document.getElementById("root"));
