@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce6c69d7.chunk.css",
-    "main.js": "/static/js/main.cf44cb44.chunk.js",
-    "main.js.map": "/static/js/main.cf44cb44.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6cfb0f5c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6cfb0f5c.js.map",
-    "static/js/2.65715773.chunk.js": "/static/js/2.65715773.chunk.js",
-    "static/js/2.65715773.chunk.js.map": "/static/js/2.65715773.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.cbfb22b4d129c68b4c9b9971437ee5c3.js": "/precache-manifest.cbfb22b4d129c68b4c9b9971437ee5c3.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.ce6c69d7.chunk.css.map": "/static/css/main.ce6c69d7.chunk.css.map",
-    "static/js/2.65715773.chunk.js.LICENSE.txt": "/static/js/2.65715773.chunk.js.LICENSE.txt",
-    "static/media/white-noise.mp3": "/static/media/white-noise.b8c8adc0.mp3"
+    "main.css": "/verbose-octo-eureka/static/css/main.ce6c69d7.chunk.css",
+    "main.js": "/verbose-octo-eureka/static/js/main.95ab45b9.chunk.js",
+    "main.js.map": "/verbose-octo-eureka/static/js/main.95ab45b9.chunk.js.map",
+    "runtime-main.js": "/verbose-octo-eureka/static/js/runtime-main.2bb3dfca.js",
+    "runtime-main.js.map": "/verbose-octo-eureka/static/js/runtime-main.2bb3dfca.js.map",
+    "static/js/2.65715773.chunk.js": "/verbose-octo-eureka/static/js/2.65715773.chunk.js",
+    "static/js/2.65715773.chunk.js.map": "/verbose-octo-eureka/static/js/2.65715773.chunk.js.map",
+    "index.html": "/verbose-octo-eureka/index.html",
+    "precache-manifest.9853dbac225755d22d8ebb2290cc30f7.js": "/verbose-octo-eureka/precache-manifest.9853dbac225755d22d8ebb2290cc30f7.js",
+    "service-worker.js": "/verbose-octo-eureka/service-worker.js",
+    "static/css/main.ce6c69d7.chunk.css.map": "/verbose-octo-eureka/static/css/main.ce6c69d7.chunk.css.map",
+    "static/js/2.65715773.chunk.js.LICENSE.txt": "/verbose-octo-eureka/static/js/2.65715773.chunk.js.LICENSE.txt",
+    "static/media/white-noise.mp3": "/verbose-octo-eureka/static/media/white-noise.b8c8adc0.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.6cfb0f5c.js",
+    "static/js/runtime-main.2bb3dfca.js",
     "static/js/2.65715773.chunk.js",
     "static/css/main.ce6c69d7.chunk.css",
-    "static/js/main.cf44cb44.chunk.js"
+    "static/js/main.95ab45b9.chunk.js"
   ]
 }
