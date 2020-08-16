@@ -1,0 +1,47 @@
+////
+/// Styles.
+/// @copyright Simon Finney 2020
+////
+
+@import "../node_modules/reset-css/sass/reset";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
+/// Convert a pixel unit to a `rem` unit
+/// @param {Number} $px - Number of the pixel unit to convert
+/// @return {Number} The converted `rem` unit
+@function rem($px) {
+  @return ($px / 16) * 1rem;
+}
+
+body {
+  color: #697077;
+  font-family: "Raleway", system-ui, sans-serif;
+  background-color: #f2f4f8;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: rem($px: 92);
+  font-weight: 300;
+  letter-spacing: rem($px: -0.64);
+  line-height: rem($px: 102);
+  text-transform: lowercase;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition-duration: 0.7s;
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0, 0, 0.3, 1);
+}
+
+.loading {
+  opacity: 0;
+  transform: translate3d(0, 50%, 0);
+}

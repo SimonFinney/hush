@@ -1,0 +1,42 @@
+{
+  "name": "verbose-octo-eureka",
+  "description": "Hush",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Simon Finney <hello@simonfinney.dev>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimonFinney/verbose-octo-eureka.git"
+  },
+  "keywords": [
+    "verbose",
+    "octo",
+    "eureka"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimonFinney/verbose-octo-eureka.git"
+  },
+  "homepage": "https://simonfinney.dev/verbose-octo-eureka",
+  "scripts": {
+    "build": "react-scripts build",
+    "deploy": "yarn build && yarn gh-pages",
+    "start": "react-scripts start",
+    "gh-pages": "gh-pages -d build"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-scripts": "3.4.3",
+    "react-sound": "^1.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "node-sass": "^4.14.1",
+    "reset-css": "^5.0.1",
+    "yarn": "^1.22.4"
+  },
+  "browserslist": "defaults"
+}

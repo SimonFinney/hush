@@ -1,0 +1,11 @@
+# https://help.github.com/articles/ignoring-files
+
+# Generated directories.
+build
+node_modules
+
+# Logs.
+*.log
+
+# Operating system.
+.DS_Store
