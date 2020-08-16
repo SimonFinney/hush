@@ -1,23 +1,21 @@
 {
-  "name": "verbose-octo-eureka",
+  "name": "hush",
   "description": "Hush",
   "version": "0.1.0",
   "private": true,
   "author": "Simon Finney <hello@simonfinney.dev>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SimonFinney/verbose-octo-eureka.git"
+    "url": "https://github.com/SimonFinney/hush.git"
   },
   "keywords": [
-    "verbose",
-    "octo",
-    "eureka"
+    "hush"
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SimonFinney/verbose-octo-eureka.git"
+    "url": "https://github.com/SimonFinney/hush.git"
   },
-  "homepage": "https://simonfinney.dev/verbose-octo-eureka",
+  "homepage": "https://simonfinney.dev/hush",
   "scripts": {
     "build": "react-scripts build",
     "deploy": "yarn build && yarn gh-pages",
