@@ -26,7 +26,7 @@ const App = () => {
       <main className={isLoaded ? null : "loading"}>
         <h1>{title}</h1>
 
-        <audio autoPlay controls>
+        <audio autoPlay controls loop>
           <source src={audio} />
         </audio>
       </main>
