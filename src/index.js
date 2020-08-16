@@ -15,18 +15,13 @@ import "./index.scss";
 
 const noSleep = new NoSleep();
 
-function wake() {
-  document.removeEventListener("click", wake);
-  noSleep.enable();
-}
-
 function App() {
   const [isLoaded, setIsLoaded] = useState();
 
   useEffect(() => {
-    setIsLoaded(true);
+    noSleep.enable();
 
-    document.addEventListener("click", wake);
+    setIsLoaded(true);
 
     return () => noSleep.disable();
   }, []);
