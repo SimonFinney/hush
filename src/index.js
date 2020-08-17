@@ -49,5 +49,5 @@ function App() {
   );
 }
 
-initialize("243418111");
+initialize("UA-35182446-5");
 render(<App />, document.getElementById("root"));
