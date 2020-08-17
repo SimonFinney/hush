@@ -1,3 +1,3 @@
-# Hush
+# hush
 
-Hush
+hush - Background noise, on-demand

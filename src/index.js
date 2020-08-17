@@ -9,12 +9,13 @@ import { render } from "react-dom";
 import { initialize } from "react-ga";
 import Helmet from "react-helmet";
 
-import { description as title } from "../package.json";
+import { description, name } from "../package.json";
 
 import audio from "./audio.mp3";
 import "./index.scss";
 
 const noSleep = new NoSleep();
+const meta = `${name} — ${description}`;
 
 function wake() {
   document.removeEventListener("click", wake);
@@ -34,12 +35,12 @@ function App() {
   return (
     <StrictMode>
       <Helmet>
-        <meta name="description" content={title} />
-        <title>{title}</title>
+        <meta name="description" content={meta} />
+        <title>{meta}</title>
       </Helmet>
 
       <main className={isLoaded ? null : "loading"}>
-        <h1>{title}</h1>
+        <h1>{name}</h1>
 
         <audio autoPlay controls loop>
           <source src={audio} />
