@@ -14,7 +14,6 @@ import { description as title } from "../package.json";
 import audio from "./audio.mp3";
 import "./index.scss";
 
-initialize("243418111");
 const noSleep = new NoSleep();
 
 function wake() {
@@ -50,4 +49,5 @@ function App() {
   );
 }
 
+initialize("243418111");
 render(<App />, document.getElementById("root"));

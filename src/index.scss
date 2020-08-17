@@ -3,8 +3,6 @@
 /// @copyright Simon Finney 2020
 ////
 
-// @import "../node_modules/reset-css/sass/reset";
-
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 
 /// Convert a pixel unit to a `rem` unit
@@ -45,7 +43,7 @@ main {
 
 h1 {
   margin-top: 0;
-  margin-bottom: rem($px: 24);
+  margin-bottom: rem($px: 16);
   font-size: rem($px: 92);
   font-weight: 300;
   letter-spacing: rem($px: -0.64);
