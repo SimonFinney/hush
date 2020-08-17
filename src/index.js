@@ -6,6 +6,7 @@
 import NoSleep from "nosleep.js";
 import React, { StrictMode, useEffect, useState } from "react";
 import { render } from "react-dom";
+import { initialize } from "react-ga";
 import Helmet from "react-helmet";
 
 import { description as title } from "../package.json";
@@ -13,6 +14,7 @@ import { description as title } from "../package.json";
 import audio from "./audio.mp3";
 import "./index.scss";
 
+initialize("243418111");
 const noSleep = new NoSleep();
 
 function wake() {
