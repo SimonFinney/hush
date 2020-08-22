@@ -22,7 +22,7 @@
     "deploy": "run-s build gh-pages",
     "dev": "gatsby develop",
     "dev:clean": "run-s clean dev",
-    "gh-pages": "gh-pages public",
+    "gh-pages": "gh-pages -d public",
     "run-s": "run-s"
   },
   "dependencies": {
