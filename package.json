@@ -17,7 +17,7 @@
   },
   "homepage": "https://simonfinney.dev/hush",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "clean": "gatsby clean",
     "deploy": "run-s build gh-pages",
     "dev": "gatsby develop",

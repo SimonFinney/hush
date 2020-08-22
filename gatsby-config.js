@@ -10,6 +10,7 @@ module.exports = {
     name,
     description,
   },
+  pathPrefix: name,
   plugins: [
     "gatsby-plugin-favicon",
     {
