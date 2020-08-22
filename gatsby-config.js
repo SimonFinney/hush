@@ -1,34 +1,33 @@
+/**
+ * @file Configuration.
+ * @copyright Simon Finney 2020
+ */
+
+const { description, name } = require("./package.json");
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    name,
+    description,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-favicon",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        trackingId: "UA-35182446-5",
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-google-fonts",
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        display: "swap",
+        fonts: ["Raleway:300"],
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    "gatsby-plugin-manifest",
+    "gatsby-plugin-offline",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sass",
   ],
-}
+};
