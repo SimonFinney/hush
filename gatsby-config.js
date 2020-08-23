@@ -5,10 +5,12 @@
 
 const { description, name } = require("./package.json");
 
+const meta = `${name} — ${description}`;
+
 module.exports = {
   siteMetadata: {
     name,
-    description,
+    meta,
   },
   pathPrefix: name,
   plugins: [
@@ -28,7 +30,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name,
+        short_name: name,
+        name: meta,
+        display: "minimal-ui",
         icon: "src/images/icon.png",
         start_url: "/",
       },

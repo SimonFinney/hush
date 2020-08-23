@@ -22,7 +22,7 @@ export default () => {
         query DefaultQuery {
           site {
             siteMetadata {
-              description
+              meta
               name
             }
           }
@@ -30,44 +30,37 @@ export default () => {
       `}
       render={({
         site: {
-          siteMetadata: { description, name },
+          siteMetadata: { meta, name },
         },
-      }) => {
-        const meta = `${name} — ${description}`;
+      }) => (
+        <StrictMode>
+          <Helmet>
+            <html lang="en" />
+            <meta name="description" content={meta} />
+            <title>{meta}</title>
+          </Helmet>
 
-        return (
-          <StrictMode>
-            <Helmet>
-              <html lang="en" />
-              <meta name="description" content={meta} />
-              <title>{meta}</title>
-            </Helmet>
+          <main className={isLoaded ? null : "loading"}>
+            <h1>{name}</h1>
 
-            <main className={isLoaded ? null : "loading"}>
-              <h1>{name}</h1>
-
-              <audio autoPlay controls loop>
-                <source src={audio} />
-                <track kind="captions" src={captions} />
-              </audio>
-              <form
-                action="https://www.paypal.com/cgi-bin/webscr"
-                method="post"
-              >
-                <input name="business" type="hidden" value="ZFJVJTXX7BSE2" />
-                <input name="cmd" type="hidden" value="_donations" />
-                <input name="currency_code" type="hidden" value="EUR" />
-                <input
-                  alt="Donate with PayPal button"
-                  name="submit"
-                  src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
-                  type="image"
-                />
-              </form>
-            </main>
-          </StrictMode>
-        );
-      }}
+            <audio autoPlay controls loop>
+              <source src={audio} />
+              <track kind="captions" src={captions} />
+            </audio>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input name="business" type="hidden" value="ZFJVJTXX7BSE2" />
+              <input name="cmd" type="hidden" value="_donations" />
+              <input name="currency_code" type="hidden" value="EUR" />
+              <input
+                alt="Donate with PayPal button"
+                name="submit"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+                type="image"
+              />
+            </form>
+          </main>
+        </StrictMode>
+      )}
     />
   );
 };
