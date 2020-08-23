@@ -1,3 +1,3 @@
 # hush
 
-hush — Ambient noise, on-demand
+hush — Ambient background noise, on-demand
