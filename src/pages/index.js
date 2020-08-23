@@ -14,7 +14,22 @@ import "../index.scss";
 
 export default () => {
   const [isLoaded, setIsLoaded] = useState();
-  useEffect(() => setIsLoaded(true), []);
+
+  useEffect(() => {
+    const NoSleep = require("nosleep.js");
+    const noSleep = new NoSleep();
+
+    function wake() {
+      document.removeEventListener("click", wake);
+      noSleep.enable();
+    }
+
+    document.addEventListener("click", wake);
+
+    setIsLoaded(true);
+
+    return () => noSleep.disable();
+  }, []);
 
   return (
     <StaticQuery
