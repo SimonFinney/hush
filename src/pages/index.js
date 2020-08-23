@@ -8,8 +8,7 @@ import React, { StrictMode, useEffect, useState } from "react";
 import Helmet from "react-helmet";
 
 import audio from "./audio/index.mp3";
-
-// import captions from "./audio/index.vtt";
+import captions from "./audio/index.vtt";
 
 import "../index.scss";
 
@@ -49,8 +48,7 @@ export default () => {
 
               <audio autoPlay controls loop>
                 <source src={audio} />
-
-                {/* <track kind="captions" src={captions} /> */}
+                <track kind="captions" src={captions} />
               </audio>
               <form
                 action="https://www.paypal.com/cgi-bin/webscr"

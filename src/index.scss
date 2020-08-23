@@ -39,9 +39,13 @@ main {
   transform: translate3d(-50%, 0, 0);
 }
 
+h1,
+audio {
+  margin-bottom: rem($px: 16);
+}
+
 h1 {
   margin-top: 0;
-  margin-bottom: rem($px: 16);
   font-size: rem($px: 92);
   font-weight: 300;
   letter-spacing: rem($px: -0.64);

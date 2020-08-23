@@ -12,7 +12,6 @@ module.exports = {
   },
   pathPrefix: name,
   plugins: [
-    "gatsby-plugin-favicon",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -26,7 +25,14 @@ module.exports = {
         fonts: ["Raleway:300"],
       },
     },
-    "gatsby-plugin-manifest",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name,
+        icon: "src/images/icon.png",
+        start_url: "/",
+      },
+    },
     "gatsby-plugin-offline",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
