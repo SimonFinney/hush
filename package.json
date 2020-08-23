@@ -1,6 +1,6 @@
 {
   "name": "hush",
-  "description": "Background noise on-demand",
+  "description": "Ambient noise, on-demand",
   "version": "0.1.0",
   "private": true,
   "author": "Simon Finney <hello@simonfinney.dev>",
