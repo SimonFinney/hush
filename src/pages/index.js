@@ -53,6 +53,11 @@ export default () => {
             <html lang="en" />
             <meta name="description" content={meta} />
             <title>{meta}</title>
+            <script
+              data-ad-client="ca-pub-3430203179752392"
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+              async
+            ></script>
           </Helmet>
 
           <main className={isLoaded ? null : "loading"}>
