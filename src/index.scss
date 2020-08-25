@@ -12,7 +12,7 @@
 
 body {
   margin: 0;
-  color: #697077;
+  color: #21272a;
   font-family: "Raleway", system-ui, sans-serif;
   background-color: #f2f4f8;
   -moz-osx-font-smoothing: grayscale;
@@ -39,15 +39,16 @@ main {
   transform: translate3d(-50%, 0, 0);
 }
 
-h1,
-audio {
-  margin-bottom: rem($px: 16);
-}
-
 h1 {
   margin-top: 0;
+  margin-bottom: 0;
   font-size: rem($px: 92);
   font-weight: 300;
   letter-spacing: rem($px: -0.64);
   line-height: rem($px: 102);
+  color: #697077;
+}
+
+audio {
+  margin-bottom: rem($px: 16);
 }

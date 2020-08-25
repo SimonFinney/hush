@@ -37,6 +37,7 @@ export default () => {
         query DefaultQuery {
           site {
             siteMetadata {
+              description
               meta
               name
             }
@@ -45,7 +46,7 @@ export default () => {
       `}
       render={({
         site: {
-          siteMetadata: { meta, name },
+          siteMetadata: { description, meta, name },
         },
       }) => (
         <StrictMode>
@@ -62,11 +63,13 @@ export default () => {
 
           <main className={isLoaded ? null : "loading"}>
             <h1>{name}</h1>
+            <p>{description}</p>
 
             <audio autoPlay controls loop>
               <source src={audio} />
               <track kind="captions" src={captions} />
             </audio>
+
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
               <input name="business" type="hidden" value="ZFJVJTXX7BSE2" />
               <input name="cmd" type="hidden" value="_donations" />

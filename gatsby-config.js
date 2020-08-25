@@ -10,6 +10,7 @@ const meta = `${name} — ${description}`;
 module.exports = {
   siteMetadata: {
     name,
+    description,
     meta,
   },
   pathPrefix: name,
@@ -24,7 +25,7 @@ module.exports = {
       resolve: "gatsby-plugin-google-fonts",
       options: {
         display: "swap",
-        fonts: ["Raleway:300"],
+        fonts: ["Raleway:300,500"],
       },
     },
     {
